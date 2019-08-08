@@ -5,25 +5,39 @@
     .nav-flex;
     margin: 0 auto;
     justify-content: center;
-    padding: 1% 0% 1% 0%;
     border-bottom: 2px dashed @silver; 
+    padding: 2% 3% 2% 3%;
+    @media @phone {
+        width: 100%;
+        flex-flow: column nowrap;
+    }
 }
 
 .nav-name {
     justify-self: baseline;
+    @media @phone {
+        text-align: center;
+    }
 }
 
 .nav-links {
     width: 80%;
-    .nav-flex;
-    margin: 0 auto;
+    display: flex;
+    flex-flow: row nowrap;
     justify-content: flex-end;
+    @media @phone {
+        width: 100%;
+        justify-content: space-evenly;
+    }
     
 }
 
 .nav-links a {
-    padding: 2% 2% 2% 2%;
+    padding: 2%;
     text-decoration: none;
     color: @shark;
     font-size: 1.6rem;
+    @media @phone {
+        padding: 1%; 
+    }
 }

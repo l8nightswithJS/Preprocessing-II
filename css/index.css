@@ -179,24 +179,45 @@ img {
   flex-flow: row nowrap;
   margin: 0 auto;
   justify-content: center;
-  padding: 1% 0% 1% 0%;
   border-bottom: 2px dashed #C0C0C0;
+  padding: 2% 3% 2% 3%;
+}
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+    flex-flow: column nowrap;
+  }
 }
 .nav-name {
   justify-self: baseline;
+}
+@media (max-width: 500px) {
+  .nav-name {
+    text-align: center;
+  }
 }
 .nav-links {
   width: 80%;
   display: flex;
   flex-flow: row nowrap;
-  margin: 0 auto;
   justify-content: flex-end;
 }
+@media (max-width: 500px) {
+  .nav-links {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+}
 .nav-links a {
-  padding: 2% 2% 2% 2%;
+  padding: 2%;
   text-decoration: none;
   color: #212529;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .nav-links a {
+    padding: 1%;
+  }
 }
 .footer {
   width: 100%;
@@ -209,61 +230,169 @@ img {
   font-size: 1.6rem;
   padding: 20px;
 }
-.home .intro-img-container {
+@media (max-width: 500px) {
+  .footer p {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .footer {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+.intro-img-container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;
   display: flex;
   flex-flow: column nowrap;
   border-bottom: 2px dashed #C0C0C0;
-  padding-bottom: 1%;
+  margin: 0 auto;
 }
-.home .intro-img-container h1 {
-  padding-top: 2%;
+.intro-img-container h1 {
+  padding: 2% 3% 0% 3%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .intro-img-container h1 {
+    width: 100%;
+  }
+}
+.intro-img-container .fun-bus {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0% 3% 0% 3%;
+}
+.intro-img-container p {
+  padding: 0% 3% 0% 3%;
+}
+@media (max-width: 500px) {
+  .intro-img-container {
+    width: 100%;
+  }
 }
 .home .content-section {
   margin: 30px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 0% 3% 0% 3%;
+}
+@media (max-width: 500px) {
+  .home .content-section {
+    width: 100%;
+    flex-flow: column nowrap;
+    margin: 0 auto;
+    padding: 30px 3% 0% 3%;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-section .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content img {
+    width: 100%;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-flow: column-reverse;
+    width: 100%;
+  }
+}
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content .text-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 100%;
+    padding: 0;
+  }
+}
 .home .content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 30px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed #C0C0C0;
+    padding-top: 30px;
+  }
+}
 .home .content-pick {
-  padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
+  padding: 30px 3% 0% 3%;
   display: flex;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 80%;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin: 0 auto;
+  }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 100%;
+    align-content: center;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    width: 100%;
+    padding: 0% 3% 0% 3%;
+  }
 }
